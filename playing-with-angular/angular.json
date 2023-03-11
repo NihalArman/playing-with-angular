@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-course",
+            "outputPath": "dist/playing-with-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-course:build:production"
+              "browserTarget": "playing-with-angular:build:production"
             },
             "development": {
-              "browserTarget": "angular-course:build:development"
+              "browserTarget": "playing-with-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-course:build"
+            "browserTarget": "playing-with-angular:build"
           }
         },
         "test": {
