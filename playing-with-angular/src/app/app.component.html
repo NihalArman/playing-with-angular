@@ -1,9 +1,13 @@
 <div style="...">
   <h1>
-    Warning! This website contains CSGO Memes
+    Welcome to {{data.title}}
   </h1>
   <img width="300" (click)="onLogoClicked()"
        alt="image" src="assets/images/csgomeme.jpeg">
 </div>
 
-<input class="demo" [value]="data.title">
+<div>
+<input class="demo" (keyup)="onKeyUp(titleInput.value)"
+       [value]="data.title" #titleInput>
+</div>
+
