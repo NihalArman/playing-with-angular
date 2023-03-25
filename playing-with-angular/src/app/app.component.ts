@@ -9,4 +9,8 @@ export class AppComponent {
   data = {
     title: 'csgo contents'
   };
+
+  onLogoClicked(){
+    alert("Hello World");
+  }
 }
